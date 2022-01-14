@@ -1,0 +1,23 @@
+version: 2
+
+sources: 
+    - name: adventure_works_source_kondado_11012022
+      tables: 
+        - name: sales_creditcard
+          columns:
+            - name: creditcardid
+              description: Primary key of the table
+              tests: 
+                - unique
+                - not_null 
+        - name: person_person
+        - name: person_address
+        - name: person_countryregion
+        - name: person_stateprovince
+        - name: production_product
+        - name: sales_salesorderdetail
+        - name: sales_salesorderheader
+        - name: sales_salesreason
+        - name: sales_salesorderheadersalesreason
+        - name: production_productproductphoto
+        - name: sales_specialofferproduct
