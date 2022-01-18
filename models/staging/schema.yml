@@ -17,7 +17,16 @@ sources:
         - name: production_product
         - name: sales_salesorderdetail
         - name: sales_salesorderheader
+          columns: 
+            - name: salesorderid
+              desccription: Primary key of the table
+              tests:
+                - unique
+                - not_null
         - name: sales_salesreason
         - name: sales_salesorderheadersalesreason
         - name: production_productproductphoto
         - name: sales_specialofferproduct
+        - name: sales_personcreditcard
+        - name: person_businessentityaddress
+        - name: person_businessentity

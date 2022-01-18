@@ -1,0 +1,18 @@
+version: 2
+
+models:
+    - name: fct_sales
+      columns:
+        - name: customer_fk
+          description: The foreign key to the customers dimension table
+          tests:
+            - relationships:
+                to: ref('dim_customers')
+                field: 'customer_sk'
+        - name: product_fk
+          description: The foreign key to the products dimension table
+          tests:
+            - relationships:
+                to: ref('dim_products')
+                field: 'product_sk'
+
