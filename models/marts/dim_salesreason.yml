@@ -1,0 +1,10 @@
+version: 2
+
+models:
+    - name: dim_salesreason
+      columns:
+        - name: salesreason_sk
+          description: The primary key of the dim_salesreason table generated with row_number
+          tests:
+            - unique
+            - not_null

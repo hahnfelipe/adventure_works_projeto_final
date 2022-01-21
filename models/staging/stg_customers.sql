@@ -16,4 +16,3 @@ left join {{source('adventure_works_source_kondado_11012022', 'person_countryreg
 
 
 
-

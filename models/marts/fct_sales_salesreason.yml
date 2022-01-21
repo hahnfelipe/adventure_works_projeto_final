@@ -1,0 +1,10 @@
+version: 2
+
+models:
+    - name: fct_sales_salesreason
+      columns:
+        - name: salesorderid
+          description: The foreign key to the salesheader  
+          tests:
+            - not_null
+

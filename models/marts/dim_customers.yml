@@ -8,6 +8,3 @@ models:
           tests:
             - unique
             - not_null
-        - name: customer_id
-          tests: 
-            - not_null

@@ -8,7 +8,8 @@ with staging as (
 transformed as (
 
     select 
-        salesreason_id
+        row_number() over (order by salesreason_id) as salesreason_sk
+        , salesreason_id
         , sales_reason
     from staging
 
